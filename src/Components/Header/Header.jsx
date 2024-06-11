@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
-import Profile from "./../../assets/Img/20048676-103287613161_1-s5-v1.png";
+import Profile from "./../../assets/Img/Wink Emoji GIF - Wink Emoji Apple - Discover & Share GIFs.gif";
 import "./header.css";
 import { BrowserRouter } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
@@ -77,10 +77,10 @@ const Header = () => {
           <motion.img
             src={Profile}
             alt="Profile"
-            className="w-[60px] rounded-full cursor-pointer m-1  shadow-2xl"
+            className="w-[70px] rounded-full cursor-pointer m-1  shadow-2xl"
             onClick={handleProfileClick}
             whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9, rotateZ: 500 }}
+            whileTap={{ scale: 0.4, rotateZ: 360 }}
             animate={{
               y: [0, -3, 0],
               transition: { duration: 1, repeat: Infinity },

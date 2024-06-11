@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import AboutMeImage from "./../../assets/Img/laptop wave (1).png";
+import AboutMeImage from "./../../assets/Img/AboutMe.png";
 import "./AboutSection.css";
 
 const AboutSection = () => {
@@ -89,7 +89,7 @@ const AboutSection = () => {
           <motion.img
             src={AboutMeImage}
             alt="Profile"
-            className="w-[70%] md:[65%] lg:[50%] drop-shadow-2xl shadow-red-500 "
+            className="w-[70%] md:[65%] lg:[50%] drop-shadow-2xl  "
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{
               opacity: isVisible ? 1 : 0,

@@ -1,7 +1,7 @@
 import { useEffect, useState, useMemo } from "react";
 import { motion } from "framer-motion";
 import "./HeroSection.css";
-import ProfileImage from "./../../assets/Img/Untitled-3.png";
+// import ProfileImage from "./../../assets/Img/Untitled-3.png";
 
 const HeroSection = () => {
   const texts = useMemo(
@@ -50,7 +50,7 @@ const HeroSection = () => {
     const pdfFilePath = "/path/to/your/resume.pdf";
     const link = document.createElement("a");
     link.href = pdfFilePath;
-    link.setAttribute("download", "DHIRAJ_BHAWSAR_Resume.pdf");
+    link.setAttribute("download", "ResumeDeependra.pdf");
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -65,7 +65,8 @@ const HeroSection = () => {
         <div className="md:w-1/2  flex justify-center cursor-pointer">
           <motion.img
             id="HeroImg"
-            src={ProfileImage}
+            // src={ProfileImage}
+            src="#"
             alt="Profile"
             className="w-full shadow-md"
             initial={{ opacity: 0, rotateY: -90 }}
