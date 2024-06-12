@@ -186,7 +186,7 @@ const Header = () => {
           )}
         </div>
         <motion.h1
-          className="text-3xl font-bold hover:underline px-1 font-Caveat cursor-pointer"
+          className="text-xl  md:text-3xl font-bold hover:underline px-1 font-Caveat cursor-pointer"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2, duration: 0.5 }}
