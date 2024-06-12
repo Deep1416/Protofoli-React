@@ -1,7 +1,7 @@
 import { useEffect, useState, useMemo } from "react";
 import { motion } from "framer-motion";
 import "./HeroSection.css";
-// import ProfileImage from "./../../assets/Img/Untitled-3.png";
+import ProfileImage from "./../../assets/Img/name-removebg-preview-removebg-preview.jpg";
 
 const HeroSection = () => {
   const texts = useMemo(
@@ -65,8 +65,8 @@ const HeroSection = () => {
         <div className="md:w-1/2  flex justify-center cursor-pointer">
           <motion.img
             id="HeroImg"
-            // src={ProfileImage}
-            src="#"
+            src={ProfileImage}
+            // src="#"
             alt="Profile"
             className="w-full shadow-md"
             initial={{ opacity: 0, rotateY: -90 }}
