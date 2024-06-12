@@ -132,8 +132,9 @@ const HeroSection = () => {
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
             >
+              {/* <a href="mailto:masteryoda@starwars.com">I love star wars</a> */}
               <div id="btn" className="flex justify-center items-center">
-                <span className="p-1  fill-white ">Contact Info</span>
+                <a href="mailto:deependra186037@gmail.com"><span className="p-1  fill-white ">Contact Info</span></a>
                 <svg
                   className="m-2 w-5 fill-white"
                   xmlns="http://www.w3.org/2000/svg"
