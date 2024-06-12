@@ -2,7 +2,7 @@ import { useEffect, useState, useMemo } from "react";
 import { motion } from "framer-motion";
 import "./HeroSection.css";
 import ProfileImage from "./../../assets/Img/name-removebg-preview-removebg-preview.jpg";
-import Resume from "./../../assets/Img/ResumeDeependra (1).pdf";
+import Resume from "./../../assets/Img/ResumeDeependra.pdf";
 const HeroSection = () => {
   const texts = useMemo(() => [
     "I'm Frontend Developer",
@@ -42,6 +42,9 @@ const HeroSection = () => {
 
     return () => clearTimeout(timer);
   }, [displayedText, isDeleting, charIndex, currentTextIndex, texts]);
+
+  const blob = new Blob([Resume], { type: "application/pdf" });
+  const url = URL.createObjectURL(blob);
 
   return (
     <section
@@ -92,20 +95,20 @@ const HeroSection = () => {
           >
             <motion.button
               id="btns"
-              className="bg-white text-black hover:bg-black hover:text-white p-3 rounded-2xl shadow-md   transition duration-300 ease-in-out transform hover:scale-105"
+              className="bg-white text-black hover:bg-black hover:text-white p-3 rounded-2xl shadow-md transition duration-300 ease-in-out transform hover:scale-105"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
             >
               <div
                 id="btn"
-                className="flex justify-center items-center fill-black hover:fill-white "
+                className="flex justify-center items-center fill-black hover:fill-white"
               >
                 <a
-                  href="Resume"
+                  href={url}
                   className="flex items-center"
-                  download="ResumeDeependra (1).pdf"
+                  download="RResumeDeependra.pdf"
                 >
-                  <span className="p-1  fill-black hover:fill-white">
+                  <span className="p-1 fill-black hover:fill-white">
                     Download CV
                   </span>
                   <svg
@@ -118,13 +121,13 @@ const HeroSection = () => {
                 </a>
               </div>
             </motion.button>
+
             <motion.button
               id="btns"
               className=" border border-white text-white p-3 rounded-2xl shadow-md transition duration-300 ease-in-out transform hover:scale-105 hover:border-white "
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
             >
-              
               <div id="btn" className="flex justify-center items-center">
                 <a href="mailto:deependra186037@gmail.com">
                   <span className="p-1  fill-white ">Contact Info</span>
